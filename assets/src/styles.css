@@ -1,0 +1,9 @@
+body{
+    background-image: url("assets/images/theGraduates.jpg");
+}
+.container{
+    background-color: rgb(44, 117, 253);
+    max-width: 100%;
+    display: block;
+    margin: 50px auto;
+}
