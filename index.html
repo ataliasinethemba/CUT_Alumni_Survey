@@ -8,6 +8,123 @@
   <body>
     <h1>CENTRAL UNIVERSITY OF TECHNOLOGY</h1>
     <h2>ALUMNI SURVEY</h2>
-    <div class="container"></div>
+    <div class="container">
+      <div class="survey-form"></div>
+      <form>
+        <div class="form-group">
+          <div id="name-label">
+            <label for="name">Name</label>
+          </div>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <div id="surname-label">
+            <label for="name">Surname</label>
+          </div>
+          <input
+            class="form-control"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Enter your surname "
+            required
+          />
+        </div>
+        <div class="form-group">
+          <div id="email-label">
+            <label for="email">Email</label>
+          </div>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <div id="student-number-label">
+            <label for="studentNo">Student Number</label>
+          </div>
+          <input
+            class="form-control"
+            type="number"
+            name="studentNo"
+            id="studentNo"
+            placeholder="Enter your student number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Current employment status</p>
+          <div>
+            <select
+              name="employment-status"
+              class="form-control"
+              id="employment-status"
+            >
+              <option disabled selected>Select one</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="employed">Employed</option>
+            </select>
+          </div>
+        </div>
+        <div id="gender">
+          <p>Gender</p>
+
+          <div>
+            <div>
+              <label for="female">
+                <input
+                  type="radio"
+                  name="female"
+                  class="input-radio"
+                  id="female"
+                  value="female"
+                />
+                Female</label
+              >
+            </div>
+
+            <div>
+              <label for="male">
+                <input
+                  type="radio"
+                  name="male"
+                  class="input-radio"
+                  id="male"
+                  value="male"
+                />
+                Male</label
+              >
+            </div>
+
+            <div>
+              <label for="undefined">
+                <input
+                  type="radio"
+                  name="undefined"
+                  class="input-radio"
+                  id="undefined"
+                  value="undefined"
+                />
+                Prefer not to say</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="submit-button">
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
