@@ -63,16 +63,24 @@ p{
 }
 
 .input-radio,
-.input-checkbox {
+.input-checkbox{
     margin-right: 0.625rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
 }
-.input-textarea {
-    min-height: 120px;
-    width: 100%;
-    padding: 0.625rem;
+#otherTextArea {
+    min-height: 100px;
+    width: 80%;
+    margin-left: 53px;
     resize: vertical;
+    border-radius: 8px;
+}
+#career-development{
+    min-height: 120px;
+    width: 80%;
+    margin-right: 41px;
+    resize: vertical;
+    border-radius: 8px;
 }
 
 .submit-button {
