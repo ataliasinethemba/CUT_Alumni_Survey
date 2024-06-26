@@ -71,7 +71,7 @@
               <label for="female">
                 <input
                   type="radio"
-                  name="female"
+                  name="gender"
                   class="input-radio"
                   id="female"
                   value="female"
@@ -84,7 +84,7 @@
               <label for="male">
                 <input
                   type="radio"
-                  name="male"
+                  name="gender"
                   class="input-radio"
                   id="male"
                   value="male"
@@ -97,7 +97,7 @@
               <label for="undefined">
                 <input
                   type="radio"
-                  name="undefined"
+                  name="gender"
                   class="input-radio"
                   id="undefined"
                   value="undefined"
@@ -131,10 +131,104 @@
             max="10"
           />
         </div>
+        <div class="form-group">
+          <p>
+            Which resources or services did you find most helpful during your
+            time<br />
+            at the university? (you can select more than one)
+          </p>
+          <label for="academic-advice">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="academic-advice"
+              name="resources"
+            />
+
+            Academic advising</label
+          >
+          <label for="career-services">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="career-services"
+              name="resources"
+            />
+
+            Career services</label
+          >
+          <label for="health-services">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="health-services"
+              name="resources"
+            />
+
+            Health services</label
+          >
+          <label for="library-resources">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="library-resources"
+              name="resources"
+            />
+
+            Library resources</label
+          >
+          <label for="student-clubs">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="student-clubs"
+              name="resources"
+            />
+
+            Student organizations and clubs</label
+          >
+          <label for="financial-aid-office">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="financial-aid-office"
+            />
+
+            Financial aid office</label
+          >
+          <label for="other">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              value="other"
+              name="resources"
+              id="other"
+              onclick="toggleTextarea()"
+            />
+
+            Other(please specify)</label
+          >
+          <textarea
+            id="otherTextArea"
+            value="otherText"
+            placeholder="please specify..."
+            style="display: none"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <p>
+            To what extent did the university contribute to your career
+            development?<br />If applicable, please explain how, regardless of
+            your employment status.
+          </p>
+          <textarea name="career" id="career-development"> </textarea>
+        </div>
+
         <div class="submit-button">
           <input type="submit" value="submit" />
         </div>
       </form>
+      <script src="assets/javascript/index.js"></script>
     </div>
   </body>
 </html>
